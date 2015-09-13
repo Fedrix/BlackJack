@@ -12,18 +12,11 @@ public class User extends Player {
 		return name;
 	}
 
-	public void whetherHit(Card card) {
-		if (isBust()) {
-			System.out.println(getName() + " has busted");
-			
-		} else if (hasBlackJack()) {
-			System.out.println(getName() + " has BlackJack");
-			
+	public void hit(Card card) {
 
-		} else {
 			hand.addNextCard(card);
 			
-		}
+		
 	}
 
 }

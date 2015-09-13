@@ -35,7 +35,7 @@ public class GameTable {
 		choice = sc.nextLine();
 		dealer.whetherHit(deck.drawOneCard());
 		if(choice.equalsIgnoreCase("hit")){
-		user.whetherHit(deck.drawOneCard());
+		user.hit(deck.drawOneCard());
 		}
 		
 
